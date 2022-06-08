@@ -3,12 +3,12 @@ entries:
   standardnotes:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-08T08:28:54.235288004Z"
+    created: "2022-06-08T08:45:44.451487168Z"
     description: A Helm chart for Kubernetes
-    digest: e35bcafa5bb02e45ecc1a3837007c39dee5a3be930ed9581cb2f12b799a9c7f1
+    digest: e852daffd5ac2adc6e2dc754f8bd39b6087246749beffffcad2abde06ca7debf
     name: standardnotes
     type: application
     urls:
     - https://Yan-Solo.github.io/helm-charts/standardnotes-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-08T08:28:54.234306896Z"
+generated: "2022-06-08T08:45:44.450806561Z"
