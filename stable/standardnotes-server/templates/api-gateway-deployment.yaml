@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-gateway
+  labels:
+    app: api-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-gateway
+  template:
+    metadata:
+      labels:
+        app: api-gateway
+    spec:
+      restartPolicy: Always
+      containers:
+      - name: api-gateway
+        image: standardnotes/api-gateway:1.33.0
+        command: ["/bin/sh"]
+        args:
+          - -c
+          - >-
+              ./wait-for.sh auth 3000
+              ./wait-for.sh syncing-server-js 3000
+              ./docker/entrypoint.sh start-web
+        envFrom:
+        - configMapRef:
+            name: standardnotes-configmap
+        ports:
+        - containerPort: 3000
