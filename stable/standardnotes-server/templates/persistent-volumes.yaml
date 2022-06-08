@@ -6,6 +6,9 @@ metadata:
   namespace: apps
 spec:
   storageClassName: ""
+  selector:
+    matchLabels:
+      claimer: mysql
   accessModes:
     - ReadWriteMany
   resources:
@@ -20,6 +23,9 @@ metadata:
   namespace: apps
 spec:
   storageClassName: ""
+  selector:
+    matchLabels:
+      claimer: import
   accessModes:
     - ReadWriteMany
   resources:
@@ -34,6 +40,9 @@ metadata:
   namespace: apps
 spec:
   storageClassName: ""
+  selector:
+    matchLabels:
+      claimer: redis
   accessModes:
     - ReadWriteMany
   resources:
