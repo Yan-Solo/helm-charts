@@ -17,7 +17,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: syncing-server-js
-        image: standardnotes/syncing-server-js:1.46.1
+        image: standardnotes/syncing-server-js:1.54.1
         command: ["/bin/sh"]
         args:
           - -c
@@ -32,7 +32,7 @@ spec:
         - containerPort: 3000
       
       - name: syncing-server-js-worker
-        image: standardnotes/syncing-server-js:1.46.1
+        image: standardnotes/syncing-server-js:1.54.1
         command: ["/bin/sh"]
         args:
           - -c
