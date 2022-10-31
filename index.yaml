@@ -3,9 +3,9 @@ entries:
   standardnotes:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-15T08:23:14.102556991Z"
+    created: "2022-10-31T14:27:10.26802977Z"
     description: A Helm chart for Kubernetes
-    digest: b77e46510cc3f66175f184d1df19d693633e2bb850cc952e7f745e354ce54e10
+    digest: 8089de242911abd2e80515709fea5116890bb1d7160ea9f42dc345be78c8f196
     name: standardnotes
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-15T08:23:14.101988356Z"
+    created: "2022-10-31T14:27:10.267383863Z"
     description: A Helm chart for Kubernetes
     digest: 3ec68b426765c9cc597892bdd2705f8394c74f52df5aec1d0b8ac6d6a8f0be55
     name: standardnotes
@@ -21,4 +21,39 @@ entries:
     urls:
     - https://Yan-Solo.github.io/helm-charts/standardnotes-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-15T08:23:14.101306014Z"
+  vikunja:
+  - apiVersion: v2
+    appVersion: 0.20.0
+    created: "2022-10-31T14:27:10.279516603Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: The to-do app to organize your life
+    digest: 30a8ea42b1700a9b89acab9265635c4b066a0c5dfaf4c42ce3a3e7d9f6958d5f
+    home: https://github.com/Yan-Solo/helm-charts
+    icon: https://s7.gifyu.com/images/GifCroppedTran.gif
+    keywords:
+    - vikunja
+    - to-do
+    - tasks
+    - calendar
+    - kanban
+    maintainers:
+    - email: k8s-at-home@xpander.eml.cc
+      name: auricom
+    name: vikunja
+    sources:
+    - https://kolaente.dev/vikunja/api
+    - https://kolaente.dev/vikunja/frontend
+    - https://hub.docker.com/r/vikunja/api
+    - https://hub.docker.com/r/vikunja/frontend
+    - https://vikunja.io/docs/
+    urls:
+    - https://Yan-Solo.github.io/helm-charts/vikunja-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-10-31T14:27:10.266383551Z"
