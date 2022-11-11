@@ -3,9 +3,9 @@ entries:
   standardnotes:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-31T14:27:10.26802977Z"
+    created: "2022-11-11T22:14:25.066884208Z"
     description: A Helm chart for Kubernetes
-    digest: 8089de242911abd2e80515709fea5116890bb1d7160ea9f42dc345be78c8f196
+    digest: c9f5aa9991f7409e2d5a262f5fd0b3a0d31dca757f838684fcfd0a264317196f
     name: standardnotes
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-31T14:27:10.267383863Z"
+    created: "2022-11-11T22:14:25.066359089Z"
     description: A Helm chart for Kubernetes
     digest: 3ec68b426765c9cc597892bdd2705f8394c74f52df5aec1d0b8ac6d6a8f0be55
     name: standardnotes
@@ -24,7 +24,40 @@ entries:
   vikunja:
   - apiVersion: v2
     appVersion: 0.20.0
-    created: "2022-10-31T14:27:10.279516603Z"
+    created: "2022-11-11T22:14:25.084277241Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 0.2.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.0.1
+    description: The to-do app to organize your life
+    digest: c07b5acaaefbba7a8197ce270ccbccf2d03d6d3c1668d461e081f96c60afa12d
+    home: https://github.com/Yan-Solo/helm-charts/tree/main/stable/vikunja
+    icon: https://vikunja.io/images/vikunja-logo.svg
+    keywords:
+    - vikunja
+    - to-do
+    - tasks
+    - calendar
+    - kanban
+    maintainers:
+    - name: Yan-Solo
+    name: vikunja
+    sources:
+    - https://kolaente.dev/vikunja/api
+    - https://kolaente.dev/vikunja/frontend
+    - https://hub.docker.com/r/vikunja/api
+    - https://hub.docker.com/r/vikunja/frontend
+    - https://vikunja.io/docs/
+    urls:
+    - https://Yan-Solo.github.io/helm-charts/vikunja-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 0.20.0
+    created: "2022-11-11T22:14:25.076496158Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -56,4 +89,4 @@ entries:
     urls:
     - https://Yan-Solo.github.io/helm-charts/vikunja-0.0.1.tgz
     version: 0.0.1
-generated: "2022-10-31T14:27:10.266383551Z"
+generated: "2022-11-11T22:14:25.065614662Z"
