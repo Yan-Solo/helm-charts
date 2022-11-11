@@ -1,3 +1,4 @@
+---
 image:
   # -- Caddy reverse proxy image and tag
   repository: caddy
@@ -15,6 +16,7 @@ vikunja:
   config: |-
     service:
       jwtsecret: "myVeryComplexJWTSecret"
+
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
 service:
@@ -66,7 +68,7 @@ additionalContainers:
   frontend:
     name: frontend
     # -- Vikunja frontend image and tag
-    image: vikunja/frontend:0.17.0
+    image: vikunja/frontend:0.20.0
     imagePullPolicy: IfNotPresent
 
 # -- Configure persistence settings for the chart under this key.
