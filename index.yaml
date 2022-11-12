@@ -3,9 +3,9 @@ entries:
   standardnotes:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-11T22:14:25.066884208Z"
+    created: "2022-11-12T08:55:03.767587583Z"
     description: A Helm chart for Kubernetes
-    digest: c9f5aa9991f7409e2d5a262f5fd0b3a0d31dca757f838684fcfd0a264317196f
+    digest: 8554239b713618b7e0de98d04e4e60cfeac40a54d901353cb2eb45444004b636
     name: standardnotes
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-11T22:14:25.066359089Z"
+    created: "2022-11-12T08:55:03.766852956Z"
     description: A Helm chart for Kubernetes
     digest: 3ec68b426765c9cc597892bdd2705f8394c74f52df5aec1d0b8ac6d6a8f0be55
     name: standardnotes
@@ -24,7 +24,7 @@ entries:
   vikunja:
   - apiVersion: v2
     appVersion: 0.20.0
-    created: "2022-11-11T22:14:25.084277241Z"
+    created: "2022-11-12T08:55:03.789841621Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -34,7 +34,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 12.0.1
     description: The to-do app to organize your life
-    digest: c07b5acaaefbba7a8197ce270ccbccf2d03d6d3c1668d461e081f96c60afa12d
+    digest: 867ee307f6af2e39be6233da1c004bf61890104df750f7121b82303db4ee2110
     home: https://github.com/Yan-Solo/helm-charts/tree/main/stable/vikunja
     icon: https://vikunja.io/images/vikunja-logo.svg
     keywords:
@@ -57,7 +57,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 0.20.0
-    created: "2022-11-11T22:14:25.076496158Z"
+    created: "2022-11-12T08:55:03.778312687Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -89,4 +89,4 @@ entries:
     urls:
     - https://Yan-Solo.github.io/helm-charts/vikunja-0.0.1.tgz
     version: 0.0.1
-generated: "2022-11-11T22:14:25.065614662Z"
+generated: "2022-11-12T08:55:03.765941621Z"
