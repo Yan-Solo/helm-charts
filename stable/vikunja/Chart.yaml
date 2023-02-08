@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 0.20.0
+appVersion: 0.20.2
 description: The to-do app to organize your life
 name: vikunja
-version: 0.1.0
+version: 0.1.1
 keywords:
   - vikunja
   - to-do
